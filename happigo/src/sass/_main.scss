@@ -1,0 +1,131 @@
+@charset "utf-8";
+//宽高背景
+@mixin size($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+
+//弹性盒
+@mixin display($display, $fd, $ai) {
+    display: $display;
+    flex-direction: $fd;
+    align-items: $ai;
+}
+
+//主体部分
+.main {
+    @include size(1090px, none, 0);
+    @include display(flex, column, center)
+}
+
+//TV正在直播
+.mt40 {
+    @include size(1090px, 456px, coral);
+    @include display(flex, column, center);
+    margin-top: 26px;
+}
+
+//标题
+.TV-title {
+    @include size(100%, 41px, crimson);
+}
+
+//TV标题下面的部分
+.TV-box {
+    @include size(1090px, 415px, cyan);
+    @include display(flex, 0, 0);
+}
+
+//TV标题下面左边
+.TV-box-l {
+    @include size(220px, 415px, cornflowerblue);
+}
+
+//TV标题下面右边
+.TV-box-r {
+    @include size(870px, 415px, darkcyan);
+    @include display(flex, 0, 0);
+}
+
+//右左-视频部分
+.TV-box-r-l {
+    @include size(650px, 415px, #000);
+}
+
+//右右
+.TV-box-r-r {
+    @include size(220px, 415px, green);
+}
+
+//TV节目表
+.TV-list {
+    @include size(1090px, 4413px, pink);
+    margin-top: 40px;
+}
+
+//昨日热销
+.z-sail {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//新品好物
+.new-wu {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//芒果汽车
+.m-car {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//食品健康
+.food-k {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//餐厨烹饪
+.cai-p {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//个护美妆
+.g-mei {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//服饰珠宝
+.f-bao {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//日用家居
+.day-j {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//家纺套件
+.fam-t {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//数码家电
+.shu-j {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}
+
+//家居建材
+.fam-j {
+    @include size(1090px, 443px, blue);
+    margin-top: 26px;
+}

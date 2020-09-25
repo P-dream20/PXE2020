@@ -1,0 +1,39 @@
+@charset "utf-8";
+//宽高背景
+@mixin size($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+
+//弹性盒
+@mixin display($display, $jc, $fd, $ai) {
+    display: $display;
+    justify-content: $jc;
+    flex-direction: $fd;
+    align-items: $ai;
+}
+
+.footer {
+    @include size(1519px, none, none);
+    @include display(flex, row, column, center);
+    margin-top: 26px;
+}
+
+//底部上
+.footer-top {
+    @include size(1090px, 186px, pink);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+//底部中
+.footer-middle {
+    @include size(1090px, 193px, green)
+}
+
+//底部下
+.footer-bottom {
+    @include size(100%, 283px, #262626)
+}
