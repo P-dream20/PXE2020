@@ -7,8 +7,9 @@
 }
 
 //弹性盒
-@mixin display($display, $fd, $ai) {
+@mixin display($display, $jc, $fd, $ai) {
     display: $display;
+    justify-content: $jc;
     flex-direction: $fd;
     align-items: $ai;
 }
@@ -16,25 +17,43 @@
 //主体部分
 .main {
     @include size(1090px, none, 0);
-    @include display(flex, column, center)
+    @include display(flex, center, column, center)
 }
 
 //TV正在直播
 .mt40 {
-    @include size(1090px, 456px, coral);
-    @include display(flex, column, center);
+    @include size(1090px, 456px, none);
+    @include display(flex, center, column, center);
     margin-top: 26px;
 }
 
 //标题
 .TV-title {
-    @include size(100%, 41px, crimson);
+    @include size(100%, 41px, none);
+    @include display(flex, none, none, center);
+    p {
+        @include size(none, none, none);
+        font-size: 22px;
+        i {
+            margin-right: 8px;
+        }
+        line-height: 20px;
+        border-left: 3px solid #222;
+        color:#222;
+        font-weight: bold;
+    }
+    span {
+        padding-top: 5px;
+        padding-left: 10px;
+        color: #666;
+        font-size: 14px;
+    }
 }
 
 //TV标题下面的部分
 .TV-box {
     @include size(1090px, 415px, cyan);
-    @include display(flex, 0, 0);
+    @include display(flex, 0, 0, 0);
 }
 
 //TV标题下面左边
@@ -45,7 +64,7 @@
 //TV标题下面右边
 .TV-box-r {
     @include size(870px, 415px, darkcyan);
-    @include display(flex, 0, 0);
+    @include display(flex, 0, 0, 0);
 }
 
 //右左-视频部分

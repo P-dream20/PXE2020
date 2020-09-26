@@ -92,29 +92,107 @@
     }
     //搜索框部分
     .search {
-        @include size(509px, 83px, pink);
+        @include size(509px, 83px, none);
         .search_input {
             @include size(494px, 35px, none);
+            @include display(flex, none, none, none);
             border: 2px solid #f31425;
             border-radius: 20px;
             margin-top: 20px;
+            position: relative;
+            .fdj {
+                @include size(30px, 30px, #000);
+                display: inline-block;
+            }
+            input {
+                @include size(350px, 100%, none);
+                border: none;
+                color: rgb(102, 102, 102);
+                font-size: 13px;
+            }
+            .sousuo {
+                @include size(75px, 31px, none);
+                background: -webkit-linear-gradient(0deg, rgba(244, 72, 20, 1) 0%, rgba(241, 19, 35, 1) 100%);
+                line-height: 31px;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-top-right-radius: 35px;
+                border-bottom-right-radius: 35px;
+            }
         }
         .search_list {
-            @include size(360px, 25px, red);
+            @include size(360px, 25px, none);
+            @include display(flex, space-between, none, center);
             padding-left: 14px;
+            li {
+                color: rgb(102, 102, 102);
+            }
+            .lired {
+                color: #f00;
+            }
         }
     }
     //购物车部分
     .shop-car {
-        @include size(125px, 43px, red);
+        @include size(125px, 43px, #fff);
+        @include display(flex, center, none, center);
+        border: 2px solid #F31425;
+        border-radius: 39px;
+        .che {
+            @include size(16px, 16px, #000);
+            margin-right: 5px;
+            color: #666;
+            display: block;
+        }
+        span {
+            color: #222;
+            font-size: 15px;
+            text-align: center;
+        }
+        .che:hover,
+        span:hover {
+            cursor: pointer;
+            color: #DF0010;
+        }
     }
 }
 
 //头部下面
 .header-footer {
-    @include size(100%, 42px, orchid);
+    @include size(100%, 42px, none);
     @include display(flex, center, none, center);
     border-bottom: 2px solid #df0010;
+    .header-f-main {
+        @include size(1090px, 100%, 0);
+        @include display(flex, none, none, center);
+        font-size: 16px;
+        text-align: center;
+        line-height: 42px;
+        .a1 {
+            @include size(170px, 100%, none);
+            background: -webkit-linear-gradient(0deg, rgba(244, 72, 20, 1) 0%, rgba(241, 19, 35, 1) 100%);
+            a {
+                color: #fff;
+            }
+        }
+        .a2 {
+            @include size(114px, 100%, none);
+            font-weight: bold;
+            a {
+                color: #df0010;
+            }
+        }
+        .a3 {
+            @include size(154px, 100%, none);
+        }
+        .a4 {
+            @include size(124px, 100%, none);
+        }
+    }
 }
 
 //头部下面居中
