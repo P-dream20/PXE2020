@@ -21,7 +21,7 @@
     margin-top: 20px;
     position: relative;
     h2 {
-        @include size(60px, 100%, #fff);
+        @include size(60px, 100%, #f5f5f5);
         line-height: 40px;
         text-align: center;
         color: #cacace;
@@ -44,7 +44,7 @@
 }
 
 //底部上
-.footer-top {
+.footer_top {
     @include size(1090px, 186px, none);
     @include display(flex, row, space-between, center);
     padding-top: 30px;
@@ -70,9 +70,10 @@
 }
 
 //底部中
-.footer-middle {
+.footer_middle {
     @include size(1090px, 193px, #fff);
     @include display(flex, space-between, row, center);
+    margin-bottom: 45px;
     // 列表
     .biao {
         @include size(100%, 152px, #fff);
@@ -129,40 +130,47 @@
     }
 }
 
+.foot_wai {
+    @include size(100%, none, #fff);
+    @include display(flex, center, column, center);
+}
+
 //底部下
-.footer-bottom {
+.footer_bottom {
     @include size(100%, 283px, #262626);
     @include display(flex, none, column, center);
     border-top: 3px solid #F31425;
-    margin-top: 45px;
-    .bottom_list {
-        @include size(720px, 52px, none);
+}
+
+.bottom_list {
+    @include size(720px, 52px, none);
+    @include display(flex, row, center, center);
+    margin-top: 26px;
+    margin-left: 260px;
+    li {
+        @include size(none, none, none);
         @include display(flex, row, center, center);
-        margin-top: 26px;
-        margin-left: 260px;
-        li {
-            @include size(none, none, none);
-            @include display(flex, row, center, center);
-            border-right: 1px solid #fff;
-            padding: 0 15px 0 15px;
-            color: #fff;
-        }
-        .lastli {
-            border: none;
-        }
+        border-right: 1px solid #fff;
+        padding: 0 15px 0 15px;
+        color: #fff;
     }
-    .p {
-        color: #c8c8c8;
+    .lastli {
+        border: none;
+    }
+}
+
+.p {
+    color: #c8c8c8;
+    padding-top: 10px;
+    @include display(flex, none, column, center);
+    p {
         padding-top: 10px;
-        @include display(flex, none, column, center);
-        p {
-            padding-top: 10px;
-        }
-        .p3 {
-            padding-bottom: 40px;
-        }
     }
-    .pic {
-        @include display(flex, none, row, center);
+    .p3 {
+        padding-bottom: 40px;
     }
+}
+
+.pic {
+    @include display(flex, none, row, center);
 }
