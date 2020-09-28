@@ -39,10 +39,10 @@
         font-size: 13px;
     }
     //头中右
-    .header_t_m_r {
+    .header_t_m-r {
         @include size(563px, 37px, none);
         @include display(flex, space-between, row, center);
-        .li {
+        li {
             border-right: 1px solid #ccc;
             padding: 0 10px;
             color: #333;

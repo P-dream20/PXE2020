@@ -17,7 +17,89 @@
 //主体部分
 .main {
     @include size(1090px, none, 0);
-    @include display(flex, center, column, center)
+    @include display(flex, center, column, center);
+    // position: relative;
+}
+
+//二级菜单
+#menu {
+    @include size(none, 400px, none);
+    position: absolute;
+    top: 213px;
+    left: 214px;
+    display: none;
+    ul {
+        @include size(171px, 400px, none);
+        background: -webkit-linear-gradient(0deg, rgba(244, 72, 20, 0.9) 0%, rgba(241, 19, 35, 0.9) 100%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        li {
+            @include size(146px, 46px, none);
+            line-height: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            margin-left: 10px;
+            span {
+                @include size(16px, 16px, chartreuse);
+                display: inline-block;
+                // margin-right: 14px;
+            }
+            .li_span {
+                margin-left: -14px;
+            }
+            a {
+                width: 146px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//二级菜单子菜单,第二级
+.two_hz {
+    @include size(920px, 400px, #f5f5f5);
+    position: absolute;
+    top: 0;
+    left: 171px;
+    z-index: 2;
+}
+
+//二级列表部分
+.item {
+    @include size(685px, 100%, blue);
+}
+
+//二级图片部分
+.item_nav {
+    @include size(236px, 400px, #FAFAFA);
+    @include display(flex, center, none, center);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.item_nav_r {
+    @include size(218px, 353px, #fff);
+    li {
+        @include size(109px, 118px, #fff);
+        @include display(flex, center, none, center);
+        border-bottom: 1px solid #FAFAFA;
+        border-right: 1px solid #FAFAFA;
+        float: left;
+        img {
+            width: 78px;
+        }
+    }
+    .hua1 {
+        border-right: none;
+    }
+    .hua2 {
+        border-bottom: none;
+    }
 }
 
 //TV正在直播
@@ -50,7 +132,7 @@
     i {
         margin-right: 8px;
     }
-    line-height: 20px;
+    // line-height: 20px;
     border-left: 3px solid #222;
     color:#222;
     font-weight: bold;
@@ -158,7 +240,7 @@
 
 //右左-视频部分
 .TV_box_r_l {
-    @include size(650px, 415px, #000);
+    @include size(650px, 415px, none);
 }
 
 //右右
@@ -250,6 +332,9 @@
     }
 }
 
+//左边二维码
+.zuo_ewm {}
+
 //TV节目表
 .TV_list {
     @include size(1090px, none, none);
@@ -262,6 +347,21 @@
     @include size(1090px, none, none);
     @include display(flex, space-between, row, none);
     flex-wrap: wrap;
+}
+
+.sh_list li {
+    position: relative;
+}
+
+//页面效果-添加红框
+.sh_list li:hover:after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0px;
+    border: 3px solid #df0010;
 }
 
 //ul下面的li样式
@@ -297,7 +397,7 @@
 .z_sail {
     @include size(1090px, none, none);
     @include display(flex, space-between, column, none);
-    // margin-top: 26px;
+    // margin-bottom: -26px !important;
 }
 
 //新品好物/芒果汽车/食品健康/餐厨烹饪/个护美妆/服饰珠宝/日用家居/家纺套件/数码家电/家居建材
@@ -310,4 +410,50 @@
 //渲染样式
 .sail_list ul {
     @include display(flex, space-between, row, none);
+}
+
+//星期导航栏部分
+.week {
+    @include size(844px, 46px, #f5f5f5);
+    margin-bottom: 9px;
+    margin-left: 108px;
+}
+
+.week_ul {
+    @include size(844px, 46px, none);
+    @include display(flex, space-between, row, none);
+}
+
+.week_li {
+    @include size(120px, 49px, none);
+    position: relative;
+}
+
+.last_w_li {
+    height: 49px;
+    border: 2px solid #df0010;
+    border-bottom: 2px solid#f5f5f5;
+}
+
+.week_line {
+    background-color: #ccc;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 25px;
+    width: 1px;
+    z-index: 1;
+}
+
+.week_he {
+    @include display(flex, center, column, center);
+    span {
+        font-size: 14px;
+    }
+    .today {
+        color: #c4193f;
+        font-size: 14px;
+        font-weight: bold;
+    }
 }
