@@ -1,0 +1,157 @@
+@charset "utf-8";
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list_main {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//首页，个护美妆
+.l_index {
+    width: 100%;
+    height: 58px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    a,
+    span {
+        font-size: 14px;
+        color: #666;
+        padding: 0 8px;
+    }
+    a:hover {
+        color: #94193f;
+    }
+}
+
+//排序导航
+.list_nav {
+    width: 100%;
+    line-height: 40px;
+    background-color: #fbfbfb;
+    border: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+//排序
+.paixu {
+    float: left;
+    padding-right: 0px;
+    text-align: center;
+    width: 86px;
+    border-right: 1px solid #e4e4e4;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #DF0010;
+}
+
+//ul排序方式
+.fangshi {
+    display: flex;
+    padding-left: 20px;
+    li {
+        display: flex;
+        a {
+            width: 30px;
+            color: #999;
+        }
+        span {
+            width: 10px;
+            margin-right: 10px;
+        }
+        .li_span1 {
+            background: url(../img/icon_list.png)no-repeat -90px -605px;
+        }
+        .li_span2 {
+            background: url(../img/icon_list.png) no-repeat -90px -674px;
+        }
+        .li_span3 {
+            background: url(../img/icon_list.png) no-repeat -157px -639px;
+        }
+    }
+}
+
+//分页显示
+.fenye {
+    width: 200px;
+    height: 40px;
+    float: right;
+    margin-right: 10px;
+    display: flex;
+    color: #999999;
+    .one {
+        color: #999;
+        padding-right: 10px;
+        span {
+            color: #c41f3a;
+            padding: 0 2px;
+        }
+        .l_line {
+            display: inline-block;
+            height: 16px;
+            padding: 0 2px;
+        }
+    }
+    .page {
+        color: #c41f3a;
+    }
+    .totalpage {
+        color: #999999;
+    }
+}
+
+//渲染结构
+.list_rander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list_rander ul {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.list_rander ul li {
+    width: 293px;
+    height: 377px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    img {
+        @include size(100%, 291px, none);
+    }
+    span {
+        color: #DF0010;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    p {
+        width: 262px;
+        margin-top: 9px;
+        padding: 0 10px;
+        line-height: 1.4em;
+        font-family: " 宋体";
+        color: #434343;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
