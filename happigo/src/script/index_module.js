@@ -4,6 +4,7 @@ define([], function() {
             $(function() {
                 $.ajax({
                     url: 'http://192.168.13.10/PXE2020/happigo/php/jingdong.php',
+                    // url: 'http://localhost/PXE2020/happigo/php/jingdong.php',
                     dataType: 'json'
                 }).done(function(data) {
                     console.log(data);
@@ -12,7 +13,7 @@ define([], function() {
                     $.each(data, function(index, value) {
                         strhtml += `
                     <li>
-                    <a href="index1.html?sid=${value.sid}">
+                    <a href="detail.html?sid=${value.sid}">
                         <img class="lazy" data-original="${value.url}" width="200" height="200"/>
                         <p>${value.title}</p>
                         <span>￥${value.price}</span>
@@ -88,7 +89,7 @@ define([], function() {
                         $($menu).hide();
                     });
                     $hezi.on('mouseout', function() {
-                        $($hezi).hide();
+                        $menu.hide();
                     })
                 })
                 //tab切换

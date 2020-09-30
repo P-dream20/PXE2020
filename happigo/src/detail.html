@@ -4,12 +4,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>详情页</title>
-    <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="detail_module"></script>
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/abc.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="script/require.js" defer async="true" data-main="script/main.js" data-page="detail_module" id="currentpage"></script>
 </head>
 
 <body>
-    这里就是首页
+    <!-- 头部 -->
+    <div class="header">
+        <!-- 头部上面 -->
+        <div class="header_top">
+            <!-- 页眉版心 -->
+            <div class="header_t_main">
+                <!-- 头中左 -->
+                <ul class="header_t_m_l">
+                    <li>欢迎来到快乐购!</li>
+                    <li><a href="">[登录]</a></li>
+                    <li><a href="">[免费注册]</a></li>
+                </ul>
+                <!-- 头中右 -->
+                <ul class="header_t_m-r">
+                    <li class="li li1">合作招商</li>
+                    <li class="li li2">订单查询</li>
+                    <li class="li li3">我的快乐购</li>
+                    <li class="li li4">
+                        <div class="hezi1"></div>
+                        400-705-1111
+                    </li>
+                    <li class="li li5">下载快乐购app</li>
+                    <li class="li li6">客服中心
+                        <div class="hezi2"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 头部中间 -->
+        <div class="header_center">
+            <!-- 头部居中的盒子 -->
+            <div class="header_c_main">
+                <!-- logo部分 -->
+                <div class="logo">
+                    <a class="logo_1">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <!-- 搜索框部分 -->
+                <div class="search">
+                    <div class="search_input">
+                        <div class="fdj"></div>
+                        <input type="text" value="面膜">
+                        <div class="sousuo">搜索</div>
+                    </div>
+                    <ul class="search_list">
+                        <li class="lired">板栗</li>
+                        <li>针织衫</li>
+                        <li>口红</li>
+                        <li>口罩</li>
+                        <li class="lired">爆品19元气</li>
+                        <li>雅诗兰黛</li>
+                        <li class="lired">牛奶</li>
+                        <li>面膜</li>
+                    </ul>
+                </div>
+                <!-- 购物车部分 -->
+                <div class="shop_car">
+                    <div class="che"></div>
+                    <span>购物车</span>
+                </div>
+            </div>
+        </div>
+        <!-- 头部下面 -->
+        <div class="header_footer">
+            <!-- 头部下面的盒子 -->
+            <ul class="header_f_main">
+                <li class="a1"><a href="javascript:;">所有分类</a></li>
+                <li class="a2"><a href="javascript:;">TV精选</a></li>
+                <li class="a3"><a href="javascript:;">商品推荐</a></li>
+                <li class="a4"><a href="javascript:;">美食优鲜</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 二级菜单 -->
+    <div id="menu">
+        <!-- 第一级 -->
+        <ul>
+            <li>
+                <span></span>
+                <a href="./list.html">个护美妆</a>
+            </li>
+            <li>
+                <span></span>
+                <a href="./list.html">食品健康</a>
+            </li>
+            <li>
+                <span></span>
+                <a href="./list.html">餐厨日用</a>
+            </li>
+            <li>
+                <span></span>
+                <a href="./list.html">服装配饰</a>
+            </li>
+            <li>
+                <span></span>
+                <a href="./list.html">布艺家纺</a>
+            </li>
+            <li>
+                <span></span>
+                <a href="./list.html">家电数码</a>
+            </li>
+            <li>
+                <span class="li_span"></span>
+                <a href="./list.html">品牌馆</a>
+            </li>
+        </ul>
+        <!-- 第二级 -->
+        <div class="two_hz">
+            <div class="item">第一块内容</div>
+            <div class="item">第二块内容</div>
+            <div class="item">第三块内容</div>
+            <div class="item">第四块内容</div>
+            <div class="item">第五块内容</div>
+            <div class="item">第六块内容</div>
+            <div class="item">第七块内容</div>
+            <div class="item_nav">
+                <div class="item_nav_r">
+                    <!-- li图片盒子 -->
+                    <li>
+                        <img src="https://ecimg.happigo.com/data/upload/shop/brand/05971632446068369.jpg" alt="雅诗兰黛">
+                    </li>
+                    <li class="hua1">
+                        <img src="https://ecimg.happigo.com/data/upload/shop/brand/06142028174709857.png" alt="喜善花房">
+                    </li>
+                    <li>
+                        <img src="https://ecimg.happigo.com/data/upload/shop/brand/05137152824893716.jpg" alt="三星">
+                    </li>
+                    <li class="hua1">
+                        <img src="https://ecimg.happigo.com/data/upload/shop/brand/05828406775833802.jpg" alt="达芙妮">
+                    </li>
+                    <li class="hua2">
+                        <img src="https://ecimg.happigo.com/data/upload/shop/brand/05585387292444150.jpg" alt="博洋家纺">
+                    </li>
+                    <li class="hua1 hua2">
+                        <img src="https://ecimg.happigo.com/data/upload/shop/brand/05145728915444170.jpg" alt="华为">
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 中间部分 -->
+    <div class="goodsinfo">
+        <!-- 导航栏部分 -->
+        <div class="detail_nav">
+            <a href="./index1.html">首页</a>
+            <span>&gt;</span>
+            <a href="./list.html">食品健康</a>
+            <span>&gt;</span>
+            <a href="./list.html">营养健康</a>
+            <span>&gt;</span>
+            <span>宝福林新会二十年特级老陈皮VIP典藏回馈组</span>
+        </div>
+        <div class="box">
+            <a href="cart.html" target="_blank">进入购物车</a>
+        </div>
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="" id="smallpic">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="p-price">
+                <span>快乐价</span>
+                <strong><em>￥</em><i class="loadpcp"></i></strong>
+            </div>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <a href="javascript:;">加入购物车</a>
+                <!-- void(0) -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- 底部上 -->
+        <div class="foot_wai">
+            <ul class="footer_top">
+                <li>
+                    <div class="tu"></div>
+                    <p>成功上市</p>
+                    <span>股票代码300413</span>
+                </li>
+                <li>
+                    <div class="tu"></div>
+                    <p>快乐购严选</p>
+                    <span>正品行贷 品质保证</span>
+                </li>
+                <li>
+                    <div class="tu"></div>
+                    <p>15天无理由退款</p>
+                    <span>为您提供售后无忧保障</span>
+                </li>
+                <li>
+                    <div class="tu"></div>
+                    <p>满129包邮</p>
+                    <span>在线支付 购物包邮</span>
+                </li>
+                <li>
+                    <div class="tu"></div>
+                    <p>24小时微笑服务</p>
+                    <span>365*24小时人工服务</span>
+                </li>
+            </ul>
+            <!-- 底部上中 -->
+
+            <div class="footer_middle">
+                <div class="biao">
+                    <!-- 列表 -->
+                    <ul class="left">
+                        <li>
+                            <p>使用帮助</p>
+                            <span>税费收取规则</span>
+                            <span>新手指南</span>
+                            <span>常见问题</span>
+                            <span>用户协议</span>
+                        </li>
+                        <li>
+                            <p>会员服务</p>
+                            <span>快乐币政策</span>
+                            <span>会员协议</span>
+                            <span>会员等级</span>
+                        </li>
+                        <li>
+                            <p>支付帮助</p>
+                            <span>快乐币支付</span>
+                            <span>货到付款</span>
+                            <span>在线支付</span>
+                            <span>优惠劵支付</span>
+                        </li>
+                        <li>
+                            <p>配送方式</p>
+                            <span>费用说明</span>
+                            <span>配送说明</span>
+                            <span>包邮政策</span>
+                        </li>
+                        <li>
+                            <p>售后服务</p>
+                            <span>电子发票</span>
+                            <span>退货办理</span>
+                            <span>退货政策</span>
+                            <span>售后咨询</span>
+                        </li>
+                    </ul>
+                    <!-- 二维码 -->
+                    <ul class="right">
+                        <li>
+                            <h2>手机购</h2>
+                            <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_01.png">
+                            <p>下载移动客户端</p>
+                        </li>
+                        <li>
+                            <h2>快乐微信购</h2>
+                            <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_02.png">
+                            <p>快乐微信购</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 底部下 -->
+        <div class="footer_bottom">
+            <ul class="bottom_list">
+                <li>关于快乐购</li>
+                <li>投资者关系</li>
+                <li>自营品牌招商</li>
+                <li>联系我们</li>
+                <li class="lastli">营业执照</li>
+            </ul>
+            <!-- copy -->
+            <div class="p">
+                <p>Copyright© 2006-2018 happigo. All Rights Reserved</p>
+                <p>免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800 E-Mail: service@happigo.com</p>
+                <p class="p3">湘ICP备19013404号-2<img src="https://ecimg.happigo.com/resource/web/images/jh.png">湘公网安备 43010502000556号 食品经营许可证 JY14301000273760</p>
+            </div>
+            <!-- 最底部的图 -->
+            <div class=".pic">
+                <img src="https://v.trustutn.org/images/cert/brand_bottom_small.jpg">
+                <img src="https://ecimg.happigo.com/resource/web/images/footer_shuidi.png">
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
