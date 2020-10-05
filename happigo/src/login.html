@@ -4,12 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录页/title>
-        <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="login_module"></script>
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/abc.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="login_module"></script>
+
 </head>
 
 <body>
-    这里就是首页
+    <!-- 头部 -->
+    <div class="full">
+        <div class="full_m">
+            <div class="h_c_logo">
+                <img src="https://ecimg.happigo.com/resource/web/images/logo.jpg">
+            </div>
+            <div class="h_c_right">
+                <img src="https://ecimg.happigo.com/resource/web/images/top_center.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- 表单验证部分 -->
+    <div class="login_main">
+        <div class="login_form">
+            <div class="login_r">
+                <div class="loginul">
+                    <!-- 标题部分 -->
+                    <div class="login_h2">
+                        <h2>登录快乐购</h2>
+                        <div class="logintop">还没有快乐购账号<a href="./registry.html">快速注册</a>
+                        </div>
+                    </div>
+                    <!-- 选择登录部分 -->
+                    <div class="radio_box">
+                        <span class="s_radio">
+                            <input type="radio" id="radio1" name="r1" value="1" checked="">
+                            <label for="radio1" class="r_txt">快捷登录</label>
+                        </span>
+                        <span class="s_radio">
+                            <input type="radio" id="radio2" name="r1" value="0">
+                            <label for="radio2" class="r_txt">普通密码登录</label>
+                        </span>
+                    </div>
+                    <!-- 表单部分 -->
+                    <fieldset>
+                        <form action="./registry.html">
+                            <p>
+                                <input type="text" maxlength="11" placeholder="请输入手机号码" class="tel">
+                                <span class="sp_1"></span>
+                            </p>
+                            <p>
+                                <input type="text" maxlength="6" placeholder="请输入短信验证码" class="yzm">
+                                <span class="huo">
+                                    <a href="#">获取验证码</a>
+                                    </span>
+                                <span class="sp_2"></span>
+                            </p>
+                            <p>
+                                <a href="#" class="submit">立即登陆</a>
+                            </p>
+                        </form>
+                        <!-- 下图部分 -->
+                        <div class="coagent">
+                            <h5>您可以使用以下账号登录</h5>
+                            <ul>
+                                <li>
+                                    <a class="hz_qq" title="QQ"></a>
+                                </li>
+                                <li>
+                                    <a class="hz_xl" title="新浪微博"></a>
+                                </li>
+                                <li>
+                                    <a class="hz_wx" title="微信"><img src="https://ecimg.happigo.com/resource/web/images/icon_wechat_login.png"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                    <div class="login_r_fixed">
+                        <a href="javascript:void(0)"><img src="https://ecimg.happigo.com/resource/web/images/login_r1.png">
+                            <em></em>
+                            <img class="login_ewm" src="https://ecimg.happigo.com/resource/web/images/down_app_ewm.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer_bottom">
+        <div class="w1200">
+            <p>
+                <span class="font_arial">Copyright© 2006-2019 happigo. All Rights Reserved </span> 免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+                <br> 湘ICP备19013404号-2
+            </p>
+            <p class="footer_p"><img src="https://ecimg.happigo.com/resource/web/images/foot_img3.png">
+                <img src="https://ecimg.happigo.com/resource/web/images/foot_img4.png">
+            </p>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
