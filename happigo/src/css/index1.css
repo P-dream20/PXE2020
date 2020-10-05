@@ -250,10 +250,22 @@
   height: 100%;
   background: none;
 }
+.header_footer .header_f_main .a3 a {
+  color: #333;
+}
+.header_footer .header_f_main .a3 a:hover {
+  color: #df0010;
+}
 .header_footer .header_f_main .a4 {
   width: 124px;
   height: 100%;
   background: none;
+}
+.header_footer .header_f_main .a4 a {
+  color: #333;
+}
+.header_footer .header_f_main .a4 a:hover {
+  color: #df0010;
 }
 
 .header_f_main {

@@ -188,9 +188,21 @@
         }
         .a3 {
             @include size(154px, 100%, none);
+            a {
+                color: #333;
+            }
+            a:hover {
+                color: #df0010;
+            }
         }
         .a4 {
             @include size(124px, 100%, none);
+            a {
+                color: #333;
+            }
+            a:hover {
+                color: #df0010;
+            }
         }
     }
 }

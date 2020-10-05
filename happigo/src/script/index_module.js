@@ -3,8 +3,8 @@ define([], function() {
         init: function() {
             $(function() {
                 $.ajax({
-                    url: 'http://192.168.13.10/PXE2020/happigo/php/jingdong.php',
-                    // url: 'http://localhost/PXE2020/happigo/php/jingdong.php',
+                    // url: 'http://192.168.13.10/PXE2020/happigo/php/jingdong.php',
+                    url: 'http://localhost/PXE2020/happigo/php/jingdong.php',
                     dataType: 'json'
                 }).done(function(data) {
                     console.log(data);

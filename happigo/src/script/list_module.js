@@ -43,8 +43,8 @@ define(['pagination', 'jlazyload'], function() {
                 //1.渲染列表页的数据-默认渲染第一页
                 const $list = $('.list_rander');
                 $.ajax({
-                        url: 'http://192.168.13.10/PXE2020/happigo/php/listdata.php',
-                        // url: 'http://localhost/PXE2020/happigo/php/listdata.php',
+                        // url: 'http://192.168.13.10/PXE2020/happigo/php/listdata.php',
+                        url: 'http://localhost/PXE2020/happigo/php/listdata.php',
                         dataType: 'json'
                     }).done(function(data) {
                         console.log(data);

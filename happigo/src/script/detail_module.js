@@ -16,7 +16,8 @@ define(['jcookie'], function() {
 
             //2.将sid传给后端
             $.ajax({
-                url: 'http://192.168.13.10/PXE2020/happigo/php/getsid.php',
+                // url: 'http://192.168.13.10/PXE2020/happigo/php/getsid.php',
+                url: 'http://localhost/PXE2020/happigo/php/getsid.php',
                 data: {
                     sid: $sid
                 },
@@ -88,7 +89,7 @@ define(['jcookie'], function() {
             });
 
             //小图切换
-            $('#list ul').on('click', 'li', function() {
+            $('#list ul').on('mouseover', 'li', function() {
                 //$(this):当前操作的li
                 let $imgurl = $(this).find('img').attr('src');
                 $smallpic.attr('src', $imgurl);
@@ -171,7 +172,6 @@ define(['jcookie'], function() {
                     arrnum.push($('#count').val()); //将数量push到arrnum数组中
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
-                alert('按钮触发了');
             });
 
             //二级菜单栏
