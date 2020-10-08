@@ -53,7 +53,123 @@
 .reg_main {
   width: 100%;
   height: 600px;
-  background: olivedrab;
+}
+
+.ju_he {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.reg {
+  width: 367px;
+  height: 100%;
+  float: right;
+  background: url(../img/login_icon_list.png) no-repeat 0 -115px;
+}
+
+.logul {
+  padding: 0 33px;
+}
+
+.login_h2 {
+  padding-top: 23px;
+  padding-bottom: 26px;
+}
+.login_h2 h2 {
+  display: inline-block;
+  color: #F11D20;
+  font-size: 22px;
+  height: 38px;
+  line-height: 38px;
+  font-weight: bold;
+  padding-bottom: 26px;
+}
+
+.lognrtop {
+  float: right;
+  height: 38px;
+  line-height: 38px;
+}
+.lognrtop a {
+  color: #c41f3a;
+}
+
+fieldset {
+  width: 317px;
+  height: 211px;
+}
+fieldset p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+fieldset p input {
+  width: 100%;
+  height: 39px;
+  color: #333333;
+  border: 1px solid #c8c8c8;
+  padding: 6px 0px 6px 6px;
+}
+fieldset p .yzm {
+  width: 165px;
+  margin-bottom: 25px;
+}
+fieldset p .huo {
+  display: inline-block;
+  color: #444444;
+  border: 1px solid #c8c8c8;
+  margin-left: 17px;
+  font-weight: bold;
+  width: 131px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: -webkit-linear-gradient(top, #f2f2f2, #fbfbfb);
+}
+fieldset p span {
+  display: block;
+}
+fieldset p .sp_1,
+fieldset p .sp_2,
+fieldset p .sp_3,
+fieldset p .sp_4 {
+  height: 23px;
+  line-height: 23px;
+  padding-left: 6px;
+  margin-bottom: 10px;
+}
+fieldset p .yzm2 img {
+  width: 78px;
+  height: 38px;
+  display: inline-block;
+}
+fieldset p .ml5 {
+  color: #c41f3a;
+  font-size: 12px;
+  font-family: "宋体";
+}
+fieldset .submit {
+  display: block;
+  border: none;
+  background: #F11D20;
+  width: 317px;
+  height: 40px;
+  color: white;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+fieldset .agree {
+  padding-top: 5px;
+}
+fieldset .agree label {
+  color: #767676;
+  padding-left: 6px;
+}
+fieldset .agree label span a {
+  color: #c41f3a;
 }
 
 /*# sourceMappingURL=registry.css.map */

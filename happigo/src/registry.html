@@ -23,7 +23,56 @@
         </div>
     </div>
     <!-- 表单验证部分 -->
-    <div class="reg_main"></div>
+    <div class="reg_main">
+        <!-- 居中的盒子 -->
+        <div class="ju_he">
+            <!-- 用户注册 -->
+            <div class="reg">
+                <div class="logul">
+                    <div class="login_h2">
+                        <h2>用户注册</h2>
+                        <div class="lognrtop">已有帐号<a href="login.html">在此登录</a></div>
+                    </div>
+                    <!-- 表单部分 -->
+                    <fieldset>
+                        <form action="./login.html">
+                            <p>
+                                <input type="text" maxlength="11" placeholder="请输入手机号码" class="tel">
+                                <span class="sp_1"></span>
+                            </p>
+                            <p>
+                                <input type="text" maxlength="6" placeholder="请输入短信验证码" class="yzm">
+                                <span class="huo">
+                                    <a href="#">获取验证码</a>
+                                    </span>
+                                <span class="sp_2"></span>
+                            </p>
+                            <p>
+                                <input type="password" placeholder="请输入密码" tabindex="4" maxlength="16" class="password">
+                                <span class="sp_3"></span>
+                            </p>
+                            <p>
+                                <input type="password" placeholder="请再次输入密码" class="repass" tabindex="5" maxlength="16">
+                                <span class="sp_4"></span>
+                            </p>
+                            <p>
+                                <input type="text" placeholder="验证码" tabindex="6" maxlength="4" class="yzm yzm2">
+                                <img src="https://www.happigo.com/shop/index.php?act=seccode&amp;op=makecode&amp;nchash=1aa4c1af">
+                                <a href="javascript:void(0)" class="ml5" onclick="javascript:document.getElementById('codeimage').src='https://www.happigo.com/shop/index.php?act=seccode&amp;op=makecode&amp;nchash=1aa4c1af&amp;t=' + Math.random();">换一张</a>
+                            </p>
+                            <p>
+                                <a href="./login.html" class="submit">立即注册</a>
+                            </p>
+                            <div class="agree">
+                                <input type="checkbox" class="jdcheckbox" tabindex="8" name="agree" id="agree" checked="checked">
+                                <label for="autoLogin">注册即表示同意快乐购<span><a href="#">《用户服务协议》</a></span>条款</label>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 底部 -->
     <div class="footer_bottom">
         <div class="w1200">

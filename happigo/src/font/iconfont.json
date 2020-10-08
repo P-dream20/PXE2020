@@ -1,0 +1,93 @@
+{
+  "id": "2115457",
+  "name": "font",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1073505",
+      "name": "目录",
+      "font_class": "mulu",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "9463018",
+      "name": "多媒体_播放器_音浪",
+      "font_class": "duomeiti_bofangqi_yinlang",
+      "unicode": "e814",
+      "unicode_decimal": 59412
+    },
+    {
+      "icon_id": "10294514",
+      "name": "时间 历史记录 计时 钟表 线性 (1)",
+      "font_class": "shijianlishijilujishizhongbiaoxianxing",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "646386",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "1133733",
+      "name": "购物车",
+      "font_class": "icon4",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2121676",
+      "name": "口红",
+      "font_class": "kouhong",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "2822898",
+      "name": "台灯",
+      "font_class": "taideng",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "5024128",
+      "name": "沙发",
+      "font_class": "shafa",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "5194485",
+      "name": "饮料",
+      "font_class": "-yinliao",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "5208770",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8765704",
+      "name": "裙子",
+      "font_class": "qunzi",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "15821667",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

@@ -4,11 +4,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/abc.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="cart_module"></script>
+    <title>购物车</title>
 </head>
 
 <body>
-    这里就是首页
+    <div class="zong">
+        <!-- 头部 -->
+        <div class="header">
+            <!-- 头部上面 -->
+            <div class="header_top">
+                <!-- 页眉版心 -->
+                <div class="header_t_main">
+                    <!-- 头中左 -->
+                    <ul class="header_t_m_l">
+                        <li>欢迎来到快乐购!</li>
+                        <li class="li"><a href="login.html">[登录]</a></li>
+                        <li class="li"><a href="registry.html">[免费注册]</a></li>
+                    </ul>
+                    <!-- 头中右 -->
+                    <ul class="header_t_m-r">
+                        <li class="li li1">合作招商</li>
+                        <li class="li li2">订单查询</li>
+                        <li class="li li3">我的快乐购</li>
+                        <li class="li li4">
+                            <div class="hezi1"></div>
+                            400-705-1111
+                        </li>
+                        <li class="li li5">下载快乐购app</li>
+                        <div class="li_wei">
+                            <div class="li_zhong">
+                                <img src="https://ecimg.happigo.com/resource/web/new_web/images/down_load_20190509.jpg">
+                            </div>
+                            <b class="icon_top"></b>
+                        </div>
+                        <li class="li li6">客服中心
+                            <div class="hezi2"></div>
+                        </li>
+                        <div class="help">
+                            <a href="#">帮助中心</a>
+                            <a href="#">会员反馈</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!-- 头部中间 -->
+            <div class="header_center">
+                <!-- 头部居中的盒子 -->
+                <div class="header_c_main">
+                    <!-- logo部分 -->
+                    <div class="logo">
+                        <a class="logo_1">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- 搜索框部分 -->
+                    <div class="search">
+                        <div class="search_input">
+                            <span class="iconfont icon-fangdajing"></span>
+                            <input type="text" value="面膜">
+                            <div class="sousuo">搜索</div>
+                        </div>
+                        <ul class="search_list">
+                            <li class="lired">板栗</li>
+                            <li>针织衫</li>
+                            <li>口红</li>
+                            <li>口罩</li>
+                            <li class="lired">爆品19元气</li>
+                            <li>雅诗兰黛</li>
+                            <li class="lired">牛奶</li>
+                            <li>面膜</li>
+                        </ul>
+                    </div>
+                    <!-- 购物车部分 -->
+                    <div class="shop_car">
+                        <a href="cart.html">
+                            <span class="iconfont icon-icon4"></span>
+                            <span>购物车</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 头部下面 -->
+            <div class="header_footer">
+                <!-- 头部下面的盒子 -->
+                <ul class="header_f_main">
+                    <li class="a1">
+                        <span class="iconfont icon-mulu"></span>
+                        <a href="javascript:;">所有分类</a></li>
+                    <li class="a2"><a href="javascript:;">TV精选</a></li>
+                    <li class="a3"><a href="javascript:;">商品推荐</a></li>
+                    <li class="a4"><a href="javascript:;">美食优鲜</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- 购物车内容部分 -->
+        <div id="container" class="cart">
+            <div class="w">
+                <!--全部商品哪一行-->
+                <div class="cart-top" style="display: block;">
+                    <div class="cart-top-left">
+                        <a href=""><em>全部商品</em></a>
+                    </div>
+                    <div class="footline">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--包裹购物车-->
+                <div class="cart-wrap" style="display: block;">
+                    <div class="w">
+                        <div id="jd-cart">
+                            <div class="cartmain">
+                                <div class="cart-thead">
+                                    <div class="cart-col t-checkbox">
+                                        <div class="cart-checkbox">
+                                            <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                        </div>
+                                    </div>
+                                    <div class="cart-col t-goods">商品</div>
+                                    <div class="cart-col t-props"></div>
+                                    <div class="cart-col t-prices">单价(元)</div>
+                                    <div class="cart-col t-quantity">数量</div>
+                                    <div class="cart-col t-sum">小计(元)</div>
+                                    <div class="cart-col t-action">操作</div>
+                                </div>
+                                <div id="cart-list">
+                                    <div class="cart-item-list">
+                                        <div class="cart-tbody">
+                                            <!-- 显示购物车列表 -->
+                                            <div class="item-list">
+                                                <div class="goods-item goods-item-sele" style="display: none;">
+                                                    <div class="goods-info">
+                                                        <div class="cell b-checkbox">
+                                                            <div class="cart-checkbox">
+                                                                <input type="checkbox" checked="" name="" id="" value="" />
+                                                                <span class="line-circle"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cell b-goods">
+                                                            <div class="goods-name">
+                                                                <div class="goods-pic">
+                                                                    <a href=""><img src="" alt="" /></a>
+                                                                </div>
+                                                                <div class="goods-msg">
+                                                                    <div class="goods-d-info">
+                                                                        <a href="">Apple iMac 27英寸一体机（Core i5
+                                                                            处理器/8GB内存/1TB存储/2GB独显/Retina 5K屏 MK462CH/A）</a>
+                                                                    </div>
+                                                                    <div class="goods-ex">
+                                                                        <span class="promise"></span>
+                                                                        <span class="promise">
+                                                                            <i></i><a href="">购买京东服务</a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cell b-props">
+                                                            <div class="prop-text"></div>
+                                                        </div>
+                                                        <div class="cell b-price">
+                                                            <strong>13488.00</strong>
+                                                            <a class="sales-promotion" href="">
+                                                                促销优惠
+                                                                <b></b>
+                                                            </a>
+                                                            <div class="sales-promotion-dropdown">
+                                                            </div>
+                                                        </div>
+                                                        <div class="cell b-quantity">
+                                                            <div class="quantity-form">
+                                                                <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                                <input type="text" value="1" />
+                                                                <a class="quantity-add" href="javascript:void(0)">+</a>
+                                                            </div>
+                                                            <div class="quantity-text">有货</div>
+                                                        </div>
+                                                        <div class="cell b-sum">
+                                                            <strong>13488.00</strong>
+                                                        </div>
+                                                        <div class="cell b-action">
+                                                            <a href="javascript:void(0)">删除</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cart-floatbar">
+                            <div class="select-all">
+                                <div class="cart-checkbox">
+                                    <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                </div>
+                            </div>
+                            <div class="operation">
+                                <a href="javascript:void(0)">删除选中的商品</a>
+                            </div>
+                            <div class="toolbar-right">
+                                <div class="btn-area">
+                                    <a href=""></a>
+                                </div>
+                                <div class="price-sum">
+                                    <span class="txt">总价（不含运费）：</span>
+                                    <span class="totalprice">￥0.00</span>
+                                    <span class="txt">已节省：</span>
+                                    <span class="totalsave">-￥0.00</span>
+                                </div>
+                                <div class="amount-sum">
+                                    已选择
+                                    <em>0</em> 件商品
+                                    <b></b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <!-- 底部上 -->
+            <div class="foot_wai">
+                <ul class="footer_top">
+                    <img src="https://ecimg.happigo.com/resource/web/images/foot_img1.jpg?v=1" alt="">
+                </ul>
+                <div class="xian"></div>
+                <!-- 底部上中 -->
+
+                <div class="footer_middle">
+                    <div class="biao">
+                        <!-- 列表 -->
+                        <ul class="left">
+                            <li>
+                                <p>使用帮助</p>
+                                <span>税费收取规则</span>
+                                <span>新手指南</span>
+                                <span>常见问题</span>
+                                <span>用户协议</span>
+                            </li>
+                            <li>
+                                <p>会员服务</p>
+                                <span>快乐币政策</span>
+                                <span>会员协议</span>
+                                <span>会员等级</span>
+                            </li>
+                            <li>
+                                <p>支付帮助</p>
+                                <span>快乐币支付</span>
+                                <span>货到付款</span>
+                                <span>在线支付</span>
+                                <span>优惠劵支付</span>
+                            </li>
+                            <li>
+                                <p>配送方式</p>
+                                <span>费用说明</span>
+                                <span>配送说明</span>
+                                <span>包邮政策</span>
+                            </li>
+                            <li>
+                                <p>售后服务</p>
+                                <span>电子发票</span>
+                                <span>退货办理</span>
+                                <span>退货政策</span>
+                                <span>售后咨询</span>
+                            </li>
+                        </ul>
+                        <!-- 二维码 -->
+                        <ul class="right">
+                            <li>
+                                <h2>手机购</h2>
+                                <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_01.png">
+                                <p>下载移动客户端</p>
+                            </li>
+                            <li>
+                                <h2>快乐微信购</h2>
+                                <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_02.png">
+                                <p>快乐微信购</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 底部下 -->
+            <div class="footer_bottom">
+                <ul class="bottom_list">
+                    <li>关于快乐购</li>
+                    <li>投资者关系</li>
+                    <li>自营品牌招商</li>
+                    <li>联系我们</li>
+                    <li class="lastli">营业执照</li>
+                </ul>
+                <!-- copy -->
+                <div class="p">
+                    <p>Copyright© 2006-2018 happigo. All Rights Reserved</p>
+                    <p>免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800 E-Mail: service@happigo.com</p>
+                    <p class="p3">湘ICP备19013404号-2<img src="https://ecimg.happigo.com/resource/web/images/jh.png">湘公网安备 43010502000556号 食品经营许可证 JY14301000273760</p>
+                </div>
+                <!-- 最底部的图 -->
+                <div class=".pic">
+                    <img src="https://v.trustutn.org/images/cert/brand_bottom_small.jpg">
+                    <img src="https://ecimg.happigo.com/resource/web/images/footer_shuidi.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -8,6 +8,7 @@
     <title>快乐购商品精选</title>
     <link rel="stylesheet" href="css/abc.css">
     <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="font/iconfont.css">
     <script src="script/require.js" data-main="script/main.js" defer async="true" id="currentpage" data-page="index_module"></script>
 </head>
 
@@ -23,8 +24,8 @@
                     <!-- 头中左 -->
                     <ul class="header_t_m_l">
                         <li>欢迎来到快乐购!</li>
-                        <li><a href="">[登录]</a></li>
-                        <li><a href="">[免费注册]</a></li>
+                        <li class="li"><a href="login.html">[登录]</a></li>
+                        <li class="li"><a href="registry.html">[免费注册]</a></li>
                     </ul>
                     <!-- 头中右 -->
                     <ul class="header_t_m-r">
@@ -36,9 +37,19 @@
                             400-705-1111
                         </li>
                         <li class="li li5">下载快乐购app</li>
+                        <div class="li_wei">
+                            <div class="li_zhong">
+                                <img src="https://ecimg.happigo.com/resource/web/new_web/images/down_load_20190509.jpg">
+                            </div>
+                            <b class="icon_top"></b>
+                        </div>
                         <li class="li li6">客服中心
                             <div class="hezi2"></div>
                         </li>
+                        <div class="help">
+                            <a href="#">帮助中心</a>
+                            <a href="#">会员反馈</a>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -55,7 +66,7 @@
                     <!-- 搜索框部分 -->
                     <div class="search">
                         <div class="search_input">
-                            <div class="fdj"></div>
+                            <span class="iconfont icon-fangdajing"></span>
                             <input type="text" value="面膜">
                             <div class="sousuo">搜索</div>
                         </div>
@@ -72,8 +83,11 @@
                     </div>
                     <!-- 购物车部分 -->
                     <div class="shop_car">
-                        <div class="che"></div>
-                        <span>购物车</span>
+                        <a href="cart.html">
+                            <span class="iconfont icon-icon4"></span>
+                            <span>购物车</span>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -81,7 +95,9 @@
             <div class="header_footer">
                 <!-- 头部下面的盒子 -->
                 <ul class="header_f_main">
-                    <li class="a1"><a href="javascript:;">所有分类</a></li>
+                    <li class="a1">
+                        <span class="iconfont icon-mulu"></span>
+                        <a href="javascript:;">所有分类</a></li>
                     <li class="a2"><a href="javascript:;">TV精选</a></li>
                     <li class="a3"><a href="javascript:;">商品推荐</a></li>
                     <li class="a4"><a href="javascript:;">美食优鲜</a></li>
@@ -93,33 +109,33 @@
         <div id="menu">
             <!-- 第一级 -->
             <ul>
-                <li>
-                    <span></span>
-                    <a href="./list.html">个护美妆</a>
+                <li class="active">
+                    <span class="iconfont icon-kouhong"></span>
+                    <a href="./list.html">个护美妆&gt;</a>
                 </li>
                 <li>
-                    <span></span>
-                    <a href="./list.html">食品健康</a>
+                    <span class="iconfont icon--yinliao"></span>
+                    <a href="./list.html">食品健康&gt;</a>
                 </li>
                 <li>
-                    <span></span>
-                    <a href="./list.html">餐厨日用</a>
+                    <span class="iconfont icon-taideng"></span>
+                    <a href="./list.html">餐厨日用&gt;</a>
                 </li>
                 <li>
-                    <span></span>
-                    <a href="./list.html">服装配饰</a>
+                    <span class="iconfont icon-qunzi"></span>
+                    <a href="./list.html">服装配饰&gt;</a>
                 </li>
                 <li>
-                    <span></span>
-                    <a href="./list.html">布艺家纺</a>
+                    <span class="iconfont icon-shafa"></span>
+                    <a href="./list.html">布艺家纺&gt;</a>
                 </li>
                 <li>
-                    <span></span>
-                    <a href="./list.html">家电数码</a>
+                    <span class="iconfont icon-xiangji"></span>
+                    <a href="./list.html">家电数码&gt;</a>
                 </li>
                 <li>
-                    <span class="li_span"></span>
-                    <a href="./list.html">品牌馆</a>
+                    <span class="li_span iconfont icon-xingxing"></span>
+                    <a href="./list.html">品牌馆&gt;</a>
                 </li>
             </ul>
             <!-- 第二级 -->
@@ -173,7 +189,7 @@
                     <!-- TV标题下面左边 -->
                     <div class="TV_box_l">
                         <h2>
-                            <span></span> 正在直播的商品
+                            <span class="iconfont icon-duomeiti_bofangqi_yinlang"></span> 正在直播的商品
                         </h2>
                         <!-- 网址图片 -->
                         <div class="web_pic">
@@ -192,7 +208,13 @@
                         <!-- 立即订购 -->
                         <div class="li_go">立即订购</div>
                         <!-- 手机下单 -->
-                        <div class="iphone">手机下单在线支付最高可减20</div>
+                        <div class="iphone">
+                            <a href="#">手机下单在线支付最高可减20</a>
+                        </div>
+                        <div class="iphone_wei">
+                            <img src="http://ecimg.happigo.com/data/upload/shop/store/1/337/296837_2_m_0_0.png">
+                            <p>手机下单更便捷</p>
+                        </div>
                     </div>
                     <!-- TV标题下面右边 -->
                     <div class="TV_box_r">
@@ -204,7 +226,7 @@
                         <!-- 右边 -->
                         <div class="TV_box_r_r">
                             <h2>
-                                <span></span> 即将播出
+                                <span class="iconfont icon-shijianlishijilujishizhongbiaoxianxing"></span> 即将播出
                             </h2>
                             <div class="kk">
                                 <!-- 网址图片 -->
@@ -224,7 +246,13 @@
                                 <!-- 立即订购 -->
                                 <div class="li_go">立即订购</div>
                                 <!-- 手机下单 -->
-                                <div class="iphone">手机下单在线支付最高可减20</div>
+                                <div class="iphone1">
+                                    <a href="#">手机下单在线支付最高可减20</a>
+                                </div>
+                                <div class="iphone_wei1">
+                                    <img src="http://ecimg.happigo.com/data/upload/shop/store/1/337/296837_2_m_0_0.png">
+                                    <p>手机下单更便捷</p>
+                                </div>
                             </div>
 
                         </div>
@@ -428,32 +456,9 @@
             <!-- 底部上 -->
             <div class="foot_wai">
                 <ul class="footer_top">
-                    <li>
-                        <div class="tu"></div>
-                        <p>成功上市</p>
-                        <span>股票代码300413</span>
-                    </li>
-                    <li>
-                        <div class="tu"></div>
-                        <p>快乐购严选</p>
-                        <span>正品行贷 品质保证</span>
-                    </li>
-                    <li>
-                        <div class="tu"></div>
-                        <p>15天无理由退款</p>
-                        <span>为您提供售后无忧保障</span>
-                    </li>
-                    <li>
-                        <div class="tu"></div>
-                        <p>满129包邮</p>
-                        <span>在线支付 购物包邮</span>
-                    </li>
-                    <li>
-                        <div class="tu"></div>
-                        <p>24小时微笑服务</p>
-                        <span>365*24小时人工服务</span>
-                    </li>
+                    <img src="https://ecimg.happigo.com/resource/web/images/foot_img1.jpg?v=1" alt="">
                 </ul>
+                <div class="xian"></div>
                 <!-- 底部上中 -->
 
                 <div class="footer_middle">

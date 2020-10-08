@@ -44,28 +44,18 @@
 
 //底部上
 .footer_top {
-    @include size(1090px, 186px, none);
+    @include size(1377px, 186px, none);
     @include display(flex, row, space-between, center);
     padding-top: 30px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #ccc;
-    li {
-        @include size(181px, 100%, none);
-        @include display(flex, center, column, center);
-        .tu {
-            @include size(50px, 50px, pink);
-        }
-        p {
-            color: #333;
-            font-size: 17px;
-            font-weight: bold;
-        }
-        span {
-            color: #999;
-            font-size: 15px;
-            margin-top: 5px;
-        }
-    }
+    // border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.xian {
+    width: 1099px;
+    height: 1px;
+    background: #ccc;
 }
 
 //底部中

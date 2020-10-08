@@ -3,5 +3,121 @@
 .reg_main {
     width: 100%;
     height: 600px;
-    background: olivedrab;
+}
+
+.ju_he {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.reg {
+    width: 367px;
+    height: 100%;
+    float: right;
+    background: url(../img/login_icon_list.png) no-repeat 0 -115px;
+}
+
+.logul {
+    padding: 0 33px;
+}
+
+.login_h2 {
+    padding-top: 23px;
+    padding-bottom: 26px;
+    h2 {
+        display: inline-block;
+        color: #F11D20;
+        font-size: 22px;
+        height: 38px;
+        line-height: 38px;
+        font-weight: bold;
+        padding-bottom: 26px;
+    }
+}
+
+.lognrtop {
+    float: right;
+    height: 38px;
+    line-height: 38px;
+    a {
+        color: #c41f3a;
+    }
+}
+
+fieldset {
+    width: 317px;
+    height: 211px;
+    p {
+        width: 100%;
+        margin-bottom: 10px;
+        input {
+            width: 100%;
+            height: 39px;
+            color: rgb(51, 51, 51);
+            border: 1px solid rgb(200, 200, 200);
+            padding: 6px 0px 6px 6px;
+        }
+        .yzm {
+            width: 165px;
+            margin-bottom: 25px;
+        }
+        .huo {
+            display: inline-block;
+            color: rgb(68, 68, 68);
+            border: 1px solid rgb(200, 200, 200);
+            margin-left: 17px;
+            font-weight: bold;
+            width: 131px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: -webkit-linear-gradient(top, rgb(242, 242, 242), rgb(251, 251, 251));
+        }
+        span {
+            display: block;
+        }
+        .sp_1,
+        .sp_2,
+        .sp_3,
+        .sp_4 {
+            height: 23px;
+            line-height: 23px;
+            padding-left: 6px;
+            margin-bottom: 10px;
+        }
+        .yzm2 img {
+            width: 78px;
+            height: 38px;
+            display: inline-block;
+        }
+        .ml5 {
+            color: #c41f3a;
+            font-size: 12px;
+            font-family: "宋体";
+        }
+    }
+    .submit {
+        display: block;
+        border: none;
+        background: #F11D20;
+        width: 317px;
+        height: 40px;
+        color: rgb(255, 255, 255);
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .agree {
+        padding-top: 5px;
+        label {
+            color: #767676;
+            padding-left: 6px;
+            span a {
+                color: #c41f3a;
+            }
+        }
+    }
 }

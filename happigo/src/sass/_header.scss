@@ -42,6 +42,7 @@
     .header_t_m-r {
         @include size(563px, 37px, none);
         @include display(flex, space-between, row, center);
+        position: relative;
         li {
             border-right: 1px solid #ccc;
             padding: 0 10px;
@@ -53,16 +54,73 @@
             display: inline-block;
             background: url(../img/icon_list.png)no-repeat 0 -37px;
         }
+        .li6 {
+            width: 90px;
+            height: 36px;
+            line-height: 36px;
+            border-left: 1px solid #f5f5f5;
+            border-right: 1px solid #f5f5f5;
+        }
+        .help {
+            position: absolute;
+            top: 35px;
+            right: 0px;
+            border: 1px solid #ccc;
+            border-top: none;
+            width: 90px;
+            height: 51px;
+            background-color: #fff;
+            display: none;
+            a {
+                height: 25px;
+                line-height: 25px;
+                color: #333;
+                font-size: 13px;
+                padding: 0 10px;
+            }
+            a:hover {
+                color: #df0010;
+                text-decoration: underline;
+            }
+        }
         .li6 .hezi2 {
             @include size(12px, 12px, none);
             display: inline-block;
             background: url(../img/icon_list.png)no-repeat -155px -690px;
         }
-        .li1:hover,
-        .li2:hover,
-        .li3:hover {
+        .li:hover {
             cursor: pointer;
             color: #df0010;
+            text-decoration: underline;
+        }
+        //下载快乐购下面的二维码
+        .li_wei {
+            width: 232px;
+            height: 238px;
+            position: absolute;
+            left: 300px;
+            top: 37px;
+            z-index: 55;
+            display: none;
+        }
+        .li_zhong {
+            width: 232px;
+            height: 232px;
+            box-shadow: 0 0 1px #f6f6f6;
+            padding: 5px;
+            margin-top: 5px;
+            img {
+                border: 1px solid #f6f6f6;
+            }
+        }
+        .icon_top {
+            position: absolute;
+            top: -2px;
+            width: 12px;
+            height: 8px;
+            background: url(../img/icon_list.png) no-repeat -234px -592px;
+            left: 50%;
+            margin-left: -6px;
         }
     }
 }
@@ -100,9 +158,10 @@
             border-radius: 20px;
             margin-top: 20px;
             position: relative;
-            .fdj {
-                @include size(30px, 30px, #000);
-                display: inline-block;
+            .icon-fangdajing {
+                @include size(30px, 30px, none);
+                line-height: 30px;
+                text-align: center;
             }
             input {
                 @include size(350px, 100%, none);
@@ -142,20 +201,23 @@
         @include display(flex, center, none, center);
         border: 2px solid #F31425;
         border-radius: 39px;
-        .che {
-            @include size(16px, 16px, #000);
+        a {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .icon-icon4 {
             margin-right: 5px;
             color: #666;
-            display: block;
+            font-weight: bold;
         }
         span {
             color: #222;
             font-size: 15px;
             text-align: center;
         }
-        .che:hover,
+        a:hover,
         span:hover {
-            cursor: pointer;
             color: #DF0010;
         }
     }
@@ -176,6 +238,12 @@
             @include size(170px, 100%, none);
             background: -webkit-linear-gradient(0deg, rgba(244, 72, 20, 1) 0%, rgba(241, 19, 35, 1) 100%);
             a {
+                color: #fff;
+            }
+            span {
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bold;
                 color: #fff;
             }
         }

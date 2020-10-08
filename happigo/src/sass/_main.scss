@@ -67,6 +67,7 @@
 .TV_box_l {
     @include size(220px, 415px, #fff);
     @include display(flex, none, column, none);
+    position: relative;
     h2 {
         padding: 0 14px;
         height: 22px;
@@ -76,7 +77,7 @@
         font-size: 14px;
         span {
             display: inline-block;
-            @include size(20px, 20px, #DF0010)
+            @include size(20px, 20px, none)
         }
     }
     //网址图片部分
@@ -149,6 +150,22 @@
         line-height: 34px;
         text-align: center;
     }
+    .iphone_wei {
+        // display: none;
+        width: 192px;
+        height: 192px;
+        border: 1px solid #dcdcdc;
+        border-top: none;
+        position: absolute;
+        top: 391px;
+        z-index: 6;
+        background: #fff;
+        left: 14px;
+        @include display(flex, center, column, center);
+        p {
+            font-size: 12px;
+        }
+    }
 }
 
 //TV标题下面右边
@@ -166,6 +183,7 @@
 .TV_box_r_r {
     @include size(220px, 415px, #fff);
     @include display(flex, space-evenly, column, none);
+    position: relative;
     //即将播出
     h2 {
         @include size(200px, 22px, #fff);
@@ -176,7 +194,8 @@
         font-size: 14px;
         span {
             display: inline-block;
-            @include size(10px, 10px, red);
+            font-size: 10px;
+            font-weight: bold;
         }
     }
     //图片
@@ -240,7 +259,7 @@
         color: #fff;
     }
     //手机下单
-    .iphone {
+    .iphone1 {
         @include size(192px, 34px, #fff);
         margin-top: 10px;
         margin-left: 14px;
@@ -248,6 +267,23 @@
         color: #DF0010;
         line-height: 34px;
         text-align: center;
+    }
+    .iphone_wei1 {
+        // display: none;
+        width: 192px;
+        height: 192px;
+        border: 1px solid #dcdcdc;
+        border-top: none;
+        position: absolute;
+        display: none;
+        top: 402px;
+        z-index: 6;
+        background: #fff;
+        left: 14px;
+        @include display(flex, center, column, center);
+        p {
+            font-size: 12px;
+        }
     }
 }
 

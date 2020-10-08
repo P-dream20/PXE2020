@@ -13,15 +13,17 @@
         left: 0px;
         z-index: 2;
         li {
-            @include size(146px, 46px, none);
+            @include size(171px, 46px, none);
             line-height: 40px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             text-align: center;
-            margin-left: 10px;
+            // margin-left: 10px;
             span {
-                @include size(16px, 16px, chartreuse);
-                display: inline-block;
-                // margin-right: 14px;
+                @include size(16px, 16px, none);
+                font-weight: bold;
+                color: #fff;
+                font-size: 20px;
+                margin-right: 5px;
             }
             .li_span {
                 margin-left: -14px;
@@ -31,6 +33,13 @@
                 color: #fff;
                 font-size: 14px;
                 font-weight: bold;
+            }
+        }
+        .active {
+            background: #fff;
+            span,
+            a {
+                color: #ce4261;
             }
         }
     }
@@ -47,7 +56,8 @@
 
 //二级列表部分
 .item {
-    @include size(685px, 100%, blue);
+    @include size(685px, 100%, #666);
+    font-size: 25px;
 }
 
 //二级图片部分
