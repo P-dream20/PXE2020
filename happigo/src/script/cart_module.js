@@ -5,9 +5,10 @@ define(['jcookie'], function() {
             //2.获取所有的接口数据，判断取值。
             function showlist(sid, num) { //sid：编号  num：数量
                 $.ajax({
-                    url: 'http://192.168.13.41/projectname/php/alldata.php',
+                    url: 'http://192.168.13.10/PXE2020/happigo/php/alldata.php',
                     dataType: 'json'
                 }).done(function(data) {
+                    console.log(data);
                     $.each(data, function(index, value) {
                         if (sid == value.sid) {
                             let $clonebox = $('.goods-item:hidden').clone(true, true); //克隆隐藏元素
@@ -25,7 +26,7 @@ define(['jcookie'], function() {
                     });
 
                 });
-            }
+            };
 
             //2.获取cookie渲染数据
             if ($.cookie('cookiesid') && $.cookie('cookienum')) {

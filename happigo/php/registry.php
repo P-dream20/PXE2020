@@ -5,7 +5,7 @@ include "conn.php";
 //检测用户名是否重名
 if (isset($_POST['username'])) {
     $user = $_POST['username'];
-    $result = $conn->query("select * from registry1903 where username='$user'");
+    $result = $conn->query("select * from registry where username='$user'");
     if ($result->fetch_assoc()) { //存在
         echo true; //1
     } else {
@@ -18,8 +18,6 @@ if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $password = sha1($_POST['password']);
     $repass = sha1($_POST['repass']);
-    $email = $_POST['email'];
-    $conn->query("insert registry1903 values(null,'$username','$password','$repass','$email',NOW())");
-    // header('location:http://192.168.13.10/PXE2020/happigo/php/registry.php');
-    header('location:http://localhost/PXE2020/happigo/php/registry.php');
+    $conn->query("insert registry1903 values(null,'$username','$password',NOW())");
+    header('location:http://192.168.13.10/PXE2020/happigo//src/login.html');
 }
